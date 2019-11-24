@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/59000486ad.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="todoList-head">
+            <div class="todoList__date">
+                <p class="todoList__date-text">There Will Be A Date</p>
+            </div>
+            <div class="top-text"></div>
+        </div>
+        <div class="todoList">
+            <div class="todoList-body">
+                <div class="todoList-createTask">
+                    <h2 class="accordion">To Do List 👇</h2>
+                    <div class="panel">
+                        <p class="accordion-title">Create a New To Do</p>
+                        <label for="nameofTodo">
+                            <input id="nameofTodo" type="text" placeholder="To Do">
+                        </label>
+                        <button id="toSubmit" type="submit">Submit</button>
+                        <p class="author">by Tiurin Dima </p>
+                    </div>
+                </div>
+
+                <div class="todoList-tasks">
+                    <ul class="todo" id="todo">
+                    </ul>
+                    <p class="completed__title">Things That Are Done 👌</p>
+                    <ul class="todo" id="completed">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

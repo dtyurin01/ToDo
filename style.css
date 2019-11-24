@@ -1,0 +1,182 @@
+body{
+    font-family:"Helvetica LT Std", sans-serif;
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+.todoList{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+.todoList__date{
+  text-align:center;
+  }
+.top-text{
+    border-bottom: 2px solid;
+  
+  }
+.todoList__title > h2{
+    text-align:center;
+  }
+
+.checkboxes{
+    padding: 20px 20px;
+}
+#task1,#task2,#task3{
+    width:20px;
+    height:20px;
+    padding:10px
+}  
+#taskLabel1,#taskLabel2,#taskLabel3{
+    font-size: 17px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding:10px
+}
+.todo{
+  width: 400px;
+  list-style: none;
+  position: relative;
+  transition:0.2s ease-in;
+  border-radius: 3px;
+  height: 50px;
+}
+
+
+.todo > li{
+  width: 100%;
+  position: relative;
+  font-size: 15px;
+  line-height:22px;
+  padding: 14px 0;
+  margin: 10px 0;
+}
+.buttons{
+  width: 180;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+ul.todo li .buttons button{
+  width: 50px;
+  height: 50px;
+  float:left;
+  background: none;
+  border: 8px;
+  outline:none;
+  box-shadow:none;
+  cursor: pointer;
+  position: relative;
+}
+ul.todo li .buttons button:last-of-type::before{
+  content:"";
+  width: 1px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  background-color: #8b8b8b;
+}
+.delete:hover{
+  color: rgb(185, 34, 34);
+}
+.mark:hover,
+.mark:focus{
+  color: rgb(34, 185, 67);
+}
+
+.accordion {
+  cursor: pointer;
+  border: none;
+  width:100%;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  font-size: 35px;
+}
+
+.active, .accordion:hover {
+  background-color: #f3f3f3;
+}
+
+.panel {
+  background-color: #f5f3f3;
+  padding: 0 30px;
+  border-radius:5px;
+  max-width: 300px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-left:42px;
+
+}
+.accordion-title{
+  font-size: 16px;
+  text-align: center;
+}
+#nameofTodo{
+  margin-bottom:15px;
+  border: none;
+  width: 70%;
+  max-height: 40px;
+  border-bottom: 2px solid black;
+  background-color: #f5f3f3;
+  outline: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.6s;
+}
+#nameofTodo:focus{
+  border-bottom: 2px solid #1a73a8;
+}
+#toSubmit{
+  border:none;
+  outline:none;
+  padding: 8px;
+  font-family:"Helvetica LT Std", sans-serif;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #DDDDDD;
+  transition: 0.4s;
+}
+#toSubmit:hover,
+#toSubmit:focus{
+  background-color:rgba(150, 150, 150, 0.75);
+}
+.author{
+  font-size: 12px;
+}
+
+.completed__title{
+  display: block;
+  text-align:center;
+  margin-top:  200px;
+
+}
+ul.todo#completed{
+  opacity: 0.5;
+}
+ul.todo#todo:empty:after{
+  content: "You have nothing to do";
+  margin: 15px 0 0 0;
+}
+ul.todo#completed:empty:before{
+  content: "You have yet to complete any tasks";
+}
+ul.todo#todo:after,
+ul.todo#completed:before{
+  width: 100%;
+  display:block;
+  text-align:center;
+  font-size: 12px;
+  color:#aaa;
+}
+ul.todo#todo > li{
+  text-decoration: none;
+}
