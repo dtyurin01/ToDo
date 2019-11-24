@@ -113,7 +113,6 @@ ul.todo li .buttons button:last-of-type::before{
   max-height: 0px;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  margin-left:42px;
 
 }
 .accordion-title{
